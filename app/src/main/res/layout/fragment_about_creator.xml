@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c6ff00"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context="com.atul.foodzone.fragment.AboutCreator">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/imgImageCreator"
+           android:layout_width="350dp"
+           android:layout_height="500dp"
+           android:layout_centerHorizontal="true"
+           android:padding="4dp"
+           android:src="@drawable/creator_image"
+           android:layout_marginTop="40dp"/>
+
+       <TextView
+           android:id="@+id/txtCreatorName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Atul Saini"
+           android:layout_below="@id/imgImageCreator"
+           android:textSize="28sp"
+           android:layout_centerInParent="true"
+           android:layout_marginTop="30dp"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:padding="6dp"
+           android:layout_margin="5dp"/>
+
+       <TextView
+           android:id="@+id/txtAboutCreator"
+           android:layout_below="@id/txtCreatorName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:textStyle="italic"
+           android:textSize="18sp"
+           android:textColor="#000"
+           android:text="Atul Saini is an undergraduate student at Deenbandhu Chotu Ram University of Science and Technology, pursuing his bachelor degree in B.Tech. under the field of Electronics and Communication Engineering."
+           />
+       <TextView
+           android:id="@+id/txtAboutCreator2"
+           android:layout_below="@id/txtAboutCreator"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:textColor="#000"
+           android:textStyle="italic"
+           android:textSize="18sp"
+           android:text="He has a Good knowlegde of programming languanges and can program clean codes in C, C++, Kotlin, Python."
+           />
+       <TextView
+           android:id="@+id/txtAboutCreator3"
+           android:layout_below="@id/txtAboutCreator2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:textColor="#000"
+           android:textStyle="italic"
+           android:textSize="18sp"
+           android:text="He is a hard working individual who combines his work with smart working ideas ans also enthusiastic to learn new skills."
+           />
+       <TextView
+           android:id="@+id/txtAboutCreator4"
+           android:layout_below="@id/txtAboutCreator3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:textColor="#000"
+           android:textStyle="italic"
+           android:textSize="18sp"
+           android:text="You can find more about his achievement and skills on his linked profile."
+           />
+       <TextView
+           android:id="@+id/txtLinkedIn"
+           android:layout_below="@id/txtAboutCreator4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_marginStart="5dp"
+           android:layout_marginEnd="5dp"
+           android:textColor="#000"
+           android:textStyle="italic"
+           android:textSize="18sp"
+           android:layout_marginBottom="40dp"
+           android:text="Linked Profile: https://www.linkedin.com/in/atul-saini-9baa941b1"
+           android:drawablePadding="10dp"
+           android:drawableStart="@drawable/ic_app_creator"/>
+
+
+   </RelativeLayout>
+
+</ScrollView>

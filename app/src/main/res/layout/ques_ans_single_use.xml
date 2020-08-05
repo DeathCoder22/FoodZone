@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="6dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Ques here is this i wanna ask this ? "
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#d84315"
+            />
+        <TextView
+            android:id="@+id/ans"
+            android:layout_below="@id/ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="My Ans to the ABove Ques is that you are a fucking fool"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

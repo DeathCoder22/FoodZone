@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atul.foodzone.activity.RestaurantDetails">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:minHeight="?android:attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:title = "Toolbar"/>
+        </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/txtInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_from_menu_list_below"
+        android:layout_below="@+id/appBar"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin = "5dp"
+        />
+    <ImageButton
+        android:id="@+id/imgButton"
+        android:layout_toEndOf="@id/txtInstructions"
+        android:layout_below="@id/appBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_img_button"
+        android:layout_marginStart="40dp"
+        android:background="#ffffff"
+        android:contentDescription="@string/favourites_activity" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/DetailsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgButton"
+        android:layout_marginStart="5dp"
+        android:padding="4dp"/>
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/proceed_to_cart"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:padding="4dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

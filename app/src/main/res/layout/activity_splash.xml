@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.SplashActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_atul"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="80dp"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/food_zone"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="140dp" />
+</RelativeLayout>

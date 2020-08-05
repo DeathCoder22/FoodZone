@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff8f00"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgAppImage"
+        android:layout_width="180dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/food_app"
+        android:layout_marginTop="20dp"
+        android:padding="4dp"/>
+
+    <EditText
+        android:id="@+id/etEnterMob"
+        android:layout_below="@id/imgAppImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/enter_registered_mobile_number_here"
+        android:textStyle="italic"
+        android:background="#ffffff"
+        android:padding="6dp"
+        android:drawableStart="@drawable/ic_mobile"
+        android:drawablePadding="10dp"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:minLines="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <EditText
+        android:id="@+id/etEnterPass"
+        android:layout_below="@id/etEnterMob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/enter_your_password_here"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:maxLines="1"
+        android:padding="6dp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/etEnterPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:padding="6dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#ffeb3b"/>
+
+    <TextView
+        android:id="@+id/txtForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:text="@string/forgot_password"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_an_existing_user_sign_up_here"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
